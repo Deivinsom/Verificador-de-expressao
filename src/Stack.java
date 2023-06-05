@@ -22,7 +22,7 @@ public class Stack<T>{
 
     public T pop() throws Exception{
         if (size==0) {
-            throw new Exception(null, null);
+            throw new Exception("Não tem nada na pilha");
         } 
         else {
             T value = head.getValue();

@@ -1,13 +1,11 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        Stack<Integer> pilha = new Stack<>();
+        Expressao novaExpressao = new Expressao();
 
-        pilha.push(1);
-        pilha.push(2);
-        pilha.push(3);
+        System.out.println(novaExpressao.verificaExpressao("2+4*[5+(x/2)]"));
 
-        pilha.pop();
+        System.out.println(novaExpressao.verificaExpressao("2+4*[5+(x/2]"));
 
-        pilha.display();
+        System.out.println(novaExpressao.verificaExpressao("2+4*[5+(x/2)"));
     }
 }
